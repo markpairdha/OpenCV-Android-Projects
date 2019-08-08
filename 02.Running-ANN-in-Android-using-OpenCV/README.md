@@ -1,5 +1,9 @@
 ### Running Artificial Neural Networks in Android Using OpenCV Library
 
+#### In this app we created a ANN model for computing a  XOR gate, is built and trained on netbeans and stored as .yml file
+#### This .yml file is used as trained model for test data.
+##### Here we used 2 inputs,1 hidden layer,1 output
+
 ###### Learned from https://heartbeat.fritz.ai/running-artificial-neural-networks-in-android-using-opencv-3c5640778578
 
 ###### Basics of Pytorch https://heartbeat.fritz.ai/basics-of-image-classification-with-pytorch-2f8973c51864
