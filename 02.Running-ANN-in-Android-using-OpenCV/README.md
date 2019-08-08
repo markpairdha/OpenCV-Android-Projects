@@ -5,6 +5,8 @@
 ###### Basics of Pytorch https://heartbeat.fritz.ai/basics-of-image-classification-with-pytorch-2f8973c51864
 ###### OpenCV CheatSheet https://heartbeat.fritz.ai/opencv-python-cheat-sheet-from-importing-images-to-face-detection-52919da36433
 
+![alt text](https://github.com/markpairdha/OpenCV-Android-Projects/blob/master/02.Running-ANN-in-Android-using-OpenCV/shot.png)
+
 ```java 
    public void predictANN(View v)
     {
@@ -67,7 +69,4 @@
         double accuracy = (num_correct_predictions / XORTrain.rows()) * 100;
         Toast.makeText(getApplicationContext(), "Accuracy : " + accuracy, Toast.LENGTH_LONG).show();
     }
-    ```
-    
-    
-![alt text](https://github.com/markpairdha/OpenCV-Android-Projects/blob/master/02.Running-ANN-in-Android-using-OpenCV/shot.png)
+  ```
