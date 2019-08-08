@@ -7,5 +7,16 @@ OpenCV is a vision library built for doing complex, real-time operations on imag
 The resource image is read as an OpenCV Mat named img. Then the Mat is filtered according to the Canny() method inside the Imgproc class and the filtered image is stored into the img_result Mat.
 This Mat is then converted into a bitmap image using the matToBitmap() method. Finally, the converted bitmap image is set as the image displayed on the ImageView using the setImageBitmap() method. The result after filtering the image is shown in the next figure.
 
+```java 
+
+        Imgproc.cvtColor(img,img,Imgproc.COLOR_RGB2BGRA);
+        Mat img_result = img.clone();
+        Imgproc.Canny(img,img_result,80,90);
+        Bitmap img_bitmap = Bitmap.createBitmap(img_result.cols(),img_result.rows(),Bitmap.Config.ARGB_8888);
+        Utils.matToBitmap(img_result,img_bitmap);
+        ImageView imageView = findViewById(R.id.img);
+        imageView.setImageBitmap(img_bitmap);
+```      
+
 ![alt text](https://github.com/markpairdha/OpenCV-Android-Projects/blob/master/01.OpenCVBasics/shot1.png)
 ![alt text](https://github.com/markpairdha/OpenCV-Android-Projects/blob/master/01.OpenCVBasics/shot2.png)
